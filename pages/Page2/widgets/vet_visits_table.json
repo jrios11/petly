@@ -36,12 +36,16 @@
     "vet",
     "visit_reason",
     "date",
-    "rowIndex"
+    "rowIndex",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1744496487867,
+  "columnUpdatedAt": 1744496900848,
   "columnWidthMap": {
-    "date": 128,
-    "petid": 108
+    "customColumn1": 60,
+    "date": 134,
+    "petid": 108,
+    "vet": 135,
+    "visit_reason": 141
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -78,6 +82,15 @@
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
       "key": "tableData"
     }
   ],
@@ -86,7 +99,14 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -108,24 +128,64 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
+  "onRowSelected": "",
   "parentColumnSpace": 6.84375,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumnId": "petid",
   "primaryColumns": {
+    "customColumn1": {
+      "alias": "Edit",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "th-derived",
+      "id": "customColumn1",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Edit",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(Modal1.name).then(() => {});\nPets_detail.run({\n  \"pet_details\": Pets_detail.data\n});}}",
+      "originalId": "customColumn1",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "date": {
       "alias": "date",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "date",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date\"]))}}",
+      "computedValue": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "date",
       "index": 3,
       "isCellEditable": false,
@@ -154,7 +214,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"petid\"]))}}",
+      "computedValue": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"petid\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -188,7 +248,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
+      "computedValue": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -222,7 +282,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vet\"]))}}",
+      "computedValue": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vet\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -252,11 +312,11 @@
     },
     "visit_reason": {
       "alias": "visit_reason",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"visit_reason\"]))}}",
+      "computedValue": "{{vet_visits_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"visit_reason\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -297,5 +357,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "61qzw38xlr",
-  "widgetName": "Table1"
+  "widgetName": "vet_visits_table"
 }

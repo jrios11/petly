@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{(Table1.newRow || {})}}"
+          "data": "{{(vet_visits_table.newRow || {})}}"
         },
         "sheetName": {
           "data": "vet_visits"

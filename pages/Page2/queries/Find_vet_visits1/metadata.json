@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "{{Table1.pageSize}}",
-            "offset": "{{Table1.pageOffset}}"
+            "limit": "{{vet_visits_table.pageSize}}",
+            "offset": "{{vet_visits_table.pageOffset}}"
           }
         },
         "projection": {
@@ -40,7 +40,7 @@
         "sortBy": {
           "data": [
             {
-              "column": "{{Table1.sortOrder.column}}",
+              "column": "{{vet_visits_table.sortOrder.column}}",
               "order": "Table1.sortOrder.order !== \"desc\""
             }
           ]
@@ -82,12 +82,21 @@
         "key": "formData.pagination.data"
       },
       {
+        "key": "formData.pagination.data.limit"
+      },
+      {
         "key": "formData.where.data.children[0].value"
+      },
+      {
+        "key": "formData.sortBy.data[0].column"
+      },
+      {
+        "key": "formData.pagination.data.offset"
       }
     ],
     "executeOnLoad": true,
     "name": "Find_vet_visits1",
     "pageId": "Page2",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
