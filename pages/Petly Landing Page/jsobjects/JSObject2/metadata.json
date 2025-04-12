@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "67f1d38f32ca7555311f058e_dccb3628-c9d8-41d5-a7a6-8c243be4414e",
+  "id": "Petly Landing Page_JSObject2",
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Petly Landing Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

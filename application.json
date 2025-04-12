@@ -11,7 +11,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {
@@ -24,13 +24,14 @@
   "collapseInvisibleWidgets": true,
   "color": "#FBF4ED",
   "evaluationVersion": 2,
+  "icon": "cat",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Petly Landing Page",
       "isDefault": true
     },
     {
-      "id": "Page2",
+      "id": "Vet Records",
       "isDefault": false
     }
   ],
@@ -45,7 +46,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {
