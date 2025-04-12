@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,16 +11,13 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
   "key": "oan2232fpw",
@@ -33,23 +30,24 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 9,
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
   "overflow": "NONE",
   "parentColumnSpace": 6.4921875,
   "parentId": "f15mibqra5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 28,
+  "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "DOB: {{Pet_List.triggeredRow.dob}}",
+  "text": "Age:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 9,
+  "topRow": 6,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "bi03uxyuzf",
-  "widgetName": "Text3"
+  "widgetId": "bf2ol6t89o",
+  "widgetName": "Text3Copy"
 }

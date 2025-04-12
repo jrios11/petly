@@ -31,7 +31,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(Modal1.name);}}",
+  "onClick": "{{closeModal(pet_profile_window.name);}}",
   "parentId": "f15mibqra5",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",

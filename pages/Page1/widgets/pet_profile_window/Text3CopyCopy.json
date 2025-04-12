@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -24,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "oan2232fpw",
-  "leftColumn": 21,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,16 +41,16 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 37,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "Age: {{Pet_List.triggeredRow.age}}",
+  "text": "{{Pet_List.triggeredRow.age}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 5,
+  "topRow": 6,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "bf2ol6t89o",
-  "widgetName": "Text3Copy"
+  "widgetId": "4lvezsgezn",
+  "widgetName": "Text3CopyCopy"
 }

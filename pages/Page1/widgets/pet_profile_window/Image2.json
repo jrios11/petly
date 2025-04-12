@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "defaultImage": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Cat_March_2010-1a.jpg",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
